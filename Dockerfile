@@ -35,4 +35,4 @@ COPY git_config.sh /etc/cont-init.d/gitconfig
 #-- Add MRAN packages --#
 # MRAN snapshot: 2019-01-31
 
-RUN Rscript -e "install.packages(c('car', 'tidyverse', 'magrittr', 'knitr', 'skimr', 'broom'))"
+RUN Rscript -e "install.packages(c('car', 'tidyverse', 'magrittr', 'knitr', 'skimr', 'broom', 'coin'))”
