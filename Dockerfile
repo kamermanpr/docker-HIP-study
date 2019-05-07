@@ -23,16 +23,10 @@
 #-- Get the verse rocker image --#
 # Built on Debian:stretch
 
-FROM rocker/verse:3.5.2
+FROM rocker/verse:3.6.0
 
 MAINTAINER Peter Kamerman <peter.kamerman@gmail.com>
 
-#-- Run shell scripts --#
-# Copying git_config.sh into /etc/cont-init.d sets it to run at startup
-
-COPY git_config.sh /etc/cont-init.d/gitconfig
-
 #-- Add MRAN packages --#
-# MRAN snapshot: 2019-01-31
 
 RUN Rscript -e "install.packages(c('car', 'tidyverse', 'magrittr', 'knitr', 'skimr', 'broom', 'coin'))”
