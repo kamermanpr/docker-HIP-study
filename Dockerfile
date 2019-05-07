@@ -29,4 +29,4 @@ MAINTAINER Peter Kamerman <peter.kamerman@gmail.com>
 
 #-- Add MRAN packages --#
 
-RUN Rscript -e "install.packages(c('car', 'tidyverse', 'magrittr', 'knitr', 'skimr', 'broom', 'coin'))”
+RUN Rscript -e "install.packages(c('car', 'tidyverse', 'magrittr', 'knitr', 'skimr', 'broom', 'coin'))"
